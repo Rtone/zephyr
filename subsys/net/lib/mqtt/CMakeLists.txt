@@ -18,3 +18,7 @@ zephyr_library_sources_ifdef(CONFIG_MQTT_LIB_TLS
 zephyr_library_sources_ifdef(CONFIG_MQTT_LIB_WEBSOCKET
   mqtt_transport_websocket.c
   )
+
+zephyr_library_sources_ifdef(CONFIG_MQTT_SHELL
+  mqtt_shell.c
+  )
